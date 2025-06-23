@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -14,13 +14,24 @@
       font-family: Arial, sans-serif;
       background: #f1f3f5;
     }
+    
+    .brand {
+      color: #ffffff;
+      font-size: 24px;
+    }
 
     nav {
-      background-color: #fff;
+       background: linear-gradient(135deg, #0718cb, #336699);
       padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .img-header{
+      width: 400px;
+      height: 250px;
+      
     }
 
     nav .brand {
@@ -29,26 +40,58 @@
     }
 
     nav .menu a {
-      margin-left: 20px;
+      margin-left: 50px;
       text-decoration: none;
-      color: #333;
+      color: #ffffff;
+      font-weight: 600;
     }
 
     .header {
       display: flex;
       justify-content: space-between;
       padding: 30px;
+      align-items: center ;
       background: #fff;
       margin-top: 10px;
     }
 
     .header .left {
       width: 50%;
+      text-align: center;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn-pelajari {
+      background: linear-gradient(135deg, #0718cb, #336699);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 40%;
+      text-align: center;
+
+      /* tambahan untuk posisi tengah */
+      display: block;
+      margin: 0 auto;
+    }
+
+    .btn-pelajari:hover {
+      background: linear-gradient(135deg, rgb(51, 59, 153), #336699);
+    }
+
+    h2{
+      color: #0718cb;
     }
 
     .header .right img {
       max-width: 100%;
       border: 1px solid #ccc;
+      margin-right: 50px;
     }
 
     section {
@@ -61,19 +104,31 @@
     table {
       width: 100%;
       margin-top: 20px;
-      border-collapse: collapse;
+      border-radius: 10px;
+      border-collapse: separate;
+      border-spacing: 15px;
+      overflow: hidden;
     }
 
     td {
       border: 1px solid #ccc;
       padding: 15px;
+      border-radius: 15px;
       width: 33.3%;
+      align-items: center;
+      color: #0718cb;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    td span {
+      color: black;
     }
 
     .portofolio {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      border-radius: 20px;
     }
 
     .project {
@@ -81,11 +136,12 @@
       width: 30%;
       margin: 10px 0;
       padding: 10px;
+      
     }
 
     .project img {
       width: 100%;
-      height: auto;
+      height: 80%;
       display: block;
       margin-bottom: 10px;
     }
@@ -121,7 +177,7 @@
 
   <!-- Section 1: Navbar -->
   <nav>
-    <div class="brand">Brand</div>
+    <div class="brand">NRH Portofolio</div>
     <div class="menu">
       <a href="#">Header</a>
       <a href="#">Biodata</a>
@@ -133,11 +189,11 @@
   <div class="header">
     <div class="left">
       <h2>Selamat Datang di Website Saya</h2>
-      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
-      <a href="#">Pelajari Lebih Lanjut</a>
+      <p>website yang sebagian di bantu oleh AI</p>
+      <a href="#" class="btn-pelajari">Pelajari Lebih Lanjut</a>
     </div>
     <div class="right">
-      <img src="https://via.placeholder.com/600x400" alt="Gambar Header">
+      <img src="asset/download.jpg" alt="Gambar Header" class="img-header">
     </div>
   </div>
 
@@ -148,14 +204,14 @@
 
     <table>
       <tr>
-        <td>Nirvan respati H.A</td>
-        <td>Education</td>
-        <td>Pelajar</td>
+        <td>Full Name: <span>Nirvan Respati</span></td>
+        <td>Education: <span>SMK TELEKOMUNIKASI DU</span></td>
+        <td>Pekerjaan: <span>Pelajar</span></td>
       </tr>
       <tr>
-        <td>085183383343</td>
-        <td>coding</td>
-        <td>Indonesia</td>
+        <td>Contact: <span>nirvan.8379@gmail.com</span> </td>
+        <td>Hobi: <span>Mengetik , Coding</span></td>
+        <td>Alamat: <span>Malang</span></td>
       </tr>
     </table>
   </section>
@@ -166,22 +222,26 @@
 
     <div class="portofolio">
       <div class="project">
-        <img src="https://via.placeholder.com/350x200" alt="Project 1">
+        <img src="asset/BliBli-ECommerce-dan-Marketplace-Terbaik-Indonesia-min.png" alt="Project 1">
         <div class="project-title">Proyek 1</div>
-        <p>Deskripsi proyek 1.</p>
+        <p>Website Belanja</p>
       </div>
       <div class="project">
-        <img src="https://via.placeholder.com/350x200" alt="Project 2">
+        <img src="asset/c1966059-1dda-4cd4-aa75-a0994b3e8c9a.jpeg" alt="Project 2">
         <div class="project-title">Proyek 2</div>
-        <p>Deskripsi proyek 2.</p>
+        <p>Website Kesehatan</p>
       </div>
       <div class="project">
-        <img src="https://via.placeholder.com/350x200" alt="Project 3">
+        <img src="asset/Contoh-Website-Sekolah-SMP-SMA-Luqman-Al-Hakim-1024x576.jpg" alt="Project 3">
         <div class="project-title">Proyek 3</div>
-        <p>Deskripsi proyek 3.</p>
+        <p>Website Sekolah</p>
       </div>
     </div>
   </section>
+
+  <footer>
+    <p style="text-align: center; padding: 20px; background: #0718cb; color: #fff;">&copy; 2023 Nirvan Respati. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
